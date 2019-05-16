@@ -1,6 +1,6 @@
 # Use Docker Hub PHP with Apache
 FROM php:7.2.12-apache-stretch
-
+WORKDIR /var/www/html/
 # Update and install required packages for composer
 RUN apt-get update \
   && apt-get -y dist-upgrade \
